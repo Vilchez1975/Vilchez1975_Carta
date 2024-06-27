@@ -129,3 +129,15 @@ header {
     padding: 0.5em;
     margin-bottom: 0.5em;
 }
+.list-item li{
+    margin: 0.5em;
+}
+.list-item img {
+    margin-left: 8px; /* Espacio entre la imagen y el texto */
+    width: 20px; /* Ancho de la imagen SVG */
+    height: 20px; /* Alto de la imagen SVG */
+    background-color: #9b5848; /* Color de fondo redondo */
+    border-radius: 50%; /* Bordes redondeados */
+    padding: 2px; /* Espacio interior para hacer el fondo más grande que la imagen */
+    position:absolute;
+}
