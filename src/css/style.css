@@ -6,7 +6,7 @@ body {
     background-color: #AD2831;
 }
 
-article {
+.article {
     max-width: 60%;
     margin: 0 auto;
     margin-top: 2%;
@@ -19,7 +19,7 @@ article {
     body{
         background-color: #38040E;
     }
-    article {
+    .article {
         max-width: 100%;
     }
 
@@ -62,6 +62,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.5em;
+    padding:0.05em;
 }
 
 .nombre-bocadillo {
@@ -131,13 +132,35 @@ header {
 }
 .list-item li{
     margin: 0.5em;
+    padding: 0.05em;
 }
-.list-item img {
-    margin-left: 8px; /* Espacio entre la imagen y el texto */
+.iconos {
+    margin-left: 8px;
+    margin-bottom: -0.5em;
     width: 20px; /* Ancho de la imagen SVG */
     height: 20px; /* Alto de la imagen SVG */
-    background-color: #9b5848; /* Color de fondo redondo */
+    background-color: #9b5848; 
     border-radius: 50%; /* Bordes redondeados */
-    padding: 2px; /* Espacio interior para hacer el fondo más grande que la imagen */
-    position:absolute;
+    padding: 3px; /* Espacio interior para hacer el fondo más grande que la imagen */
+    position:relative;
+}
+.art-alergenos {
+    max-width: 60%;
+    margin: 0 auto;
+    margin-top: 2%;
+    padding: 1.5em;
+    border-radius: 1em;
+    background-color: #AD2831;
+}
+.list-alergenos {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Crea dos columnas de igual tamaño */
+    gap: 10px; /* Espacio entre los elementos de la lista */
+    padding: 0;
+}
+
+.list-alergenos li {
+    display: flex;
+    align-items: center;
 }
